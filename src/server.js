@@ -28,7 +28,8 @@ class App {
     }
 
     routes() {
-
+        this.express.use(require('./routes'))
+        //Criou um arquivo separado para armazenar no ./routes
     }
 }
 
