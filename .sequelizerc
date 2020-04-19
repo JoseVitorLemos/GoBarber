@@ -1,10 +1,10 @@
 const path = require('path')
 
 module.exports = {
-    config: path.resolve('src', 'config', 'database.js'),
-    'models-path': path.resolve('src,', 'app', 'models'),
-    'seeders-path': path.resolve('src', 'database', 'seeders'),
-    'migrations-path': path.resolve('src', 'database', 'migrations'),
+  config: path.resolve('src', 'config', 'database.js'),
+  'models-path': path.resolve('src,', 'app', 'models'),
+  'seeders-path': path.resolve('src', 'database', 'seeders'),
+  'migrations-path': path.resolve('src', 'database', 'migrations'),
 }
 
 //Indicou para o sequelize que os arquivos foram alterados de locais
