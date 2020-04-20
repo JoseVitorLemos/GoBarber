@@ -16,13 +16,14 @@ class App {
   }
 
   views() {
-    nunjucks.configure(path.resolve(__dirname, 'app', 'view'), {
+    nunjucks.configure(path.resolve(__dirname, 'app', 'views'), {
       //__dirname = Identifica diretório do server.js 'src'
       //'app', 'view' = Indica onde estará a pasta com as Views
       watch: this.isDev,
       express: this.express,
       autoescape: true,
     })
+    this.express.use(express.static(path.resolve(__dirname, 'public')))
     this.express.set('view engine', 'njk')
   }
 
