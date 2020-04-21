@@ -37,5 +37,15 @@ Serve para controle de versão para as tabelas do banco de dados.
 # npx sequelize db:migrate
 Executa a migrate e executa os comandos de da ORM continos dela, no exemplo em específico foi criado 2 tabelas no banco de deados uma contida na migration e outra automatica gerada pela ORM do sequelize.
 
+# yarn add bcryptjs
+Essa dependencia vai servir para fazer a criptografia da senha.
+- Foi feito um hook: No caso será uma função criada para disparar automaticamente, dependendo de certas ações realizadas no model.
+- Ex: No processo de criação de usuário um Hash será feito na senha.
+<b>Documentação sequelize hooks:</b> https://sequelize.org/master/manual/hooks.html
+
+# yarn add multer || npm install multer
+Uma dependencia responsável por fazer upload de imagens da aplicação
+A imagem será armazenada dentro de uma pasta local chamada temp
+
 
 
