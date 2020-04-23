@@ -41,11 +41,15 @@ Executa a migrate e executa os comandos de da ORM continos dela, no exemplo em e
 Essa dependencia vai servir para fazer a criptografia da senha.
 - Foi feito um hook: No caso será uma função criada para disparar automaticamente, dependendo de certas ações realizadas no model.
 - Ex: No processo de criação de usuário um Hash será feito na senha.
+<br/>
 <b>Documentação sequelize hooks:</b> https://sequelize.org/master/manual/hooks.html
 
 # yarn add multer || npm install multer
 Uma dependencia responsável por fazer upload de imagens da aplicação
 A imagem será armazenada dentro de uma pasta local chamada temp
 
-
+# yarn add express-session
+Extensão para configuração de sessão com o express
+<br/>
+<b>Documentação express-session:</b> https://github.com/expressjs/session
 
