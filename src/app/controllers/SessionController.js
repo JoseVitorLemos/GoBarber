@@ -22,7 +22,11 @@ class SessionController {
 
     req.session.user = user
 
-    return res.redirect('/app/dashboard')
+    if (user) {
+      return res.redirect('/app/dashboard')
+    }
+
+    // console.log(req.session.user)
   }
 }
 
