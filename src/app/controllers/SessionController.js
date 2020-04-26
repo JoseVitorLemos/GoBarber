@@ -22,11 +22,13 @@ class SessionController {
 
     req.session.user = user
 
-    if (user) {
-      return res.redirect('/app/dashboard')
-    }
-
-    // console.log(req.session.user)
+    return res.redirect('/app/dashboard')
+  }
+  destroy(req, res) {
+    req.session.destroy(() => {
+      res.clearCookie('root')
+      return res.redirect('/')
+    })
   }
 }
 
