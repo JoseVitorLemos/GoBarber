@@ -53,3 +53,5 @@ Extensão para configuração de sessão com o express
 <br/>
 <b>Documentação express-session:</b> https://github.com/expressjs/session
 
+# yarn add connect-flash
+

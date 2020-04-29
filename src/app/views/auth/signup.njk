@@ -2,6 +2,8 @@
 
 {% block body %}
   <form action="/signup" method="post" enctype="multipart/form-data">
+    {% include "_partials/flash.njk" %}
+
     <label for="avatar">
       <img src="/images/avatar.svg" height="24"/>
     </label>
@@ -27,7 +29,9 @@
     let img = document.querySelector('label[for=avatar] img')
 
     avatarInput.onchange = function (event) {
-      img.classList.add('preview')
+      img
+        .classList
+        .add('preview')
       img.src = URL.createObjectURL(event.target.files[0])
     }
   </script>
